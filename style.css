@@ -11,7 +11,6 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  transition: opacity 0.5s ease;
 }
 
 .screen.active {
@@ -28,8 +27,7 @@ body {
 }
 
 #game-canvas {
-  background: url('assets/bg.png') repeat-x;
-  background-size: cover;
+  background: #222;
   display: block;
   margin: 0 auto;
   border: 2px solid #fff;
