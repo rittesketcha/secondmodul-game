@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Исследователь</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="welcome-screen" class="screen active">
+    <h1>Исследователь</h1>
+    <input type="text" id="player-name" placeholder="Введите имя" />
+    <button id="start-btn" disabled>Начать</button>
+  </div>
+
+  <div id="game-screen" class="screen">
+    <div id="hud">
+      <span id="display-name"></span>
+      <span id="time">00:00</span>
+      <span id="power">Power: 50%</span>
+    </div>
+    <canvas id="game-canvas" width="800" height="600"></canvas>
+  </div>
+
+  <div id="result-screen" class="screen">
+    <h2>Результат</h2>
+    <p id="result-text"></p>
+    <button id="restart-btn">Рестарт</button>
+  </div>
+
+  <div id="lose-screen" class="screen">
+    <h2>Вы проиграли!</h2>
+    <button id="restart-btn-lose">Рестарт</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
